@@ -39,7 +39,7 @@ void array_rows_cols(const int (&twoD_array)[N][N]) {
 }
 
 int main() {
-	int twoD_array[20][20];
+	int twoD_array[100][100];
 
 	int x;
 	int y;
@@ -50,8 +50,8 @@ int main() {
 	std::cout << "Enter the number of rows: ";
 	std::cin >> y;
 
-	for (int i = 0; i < 20; i++) {
-		for (int ii = 0; ii < 20; ii++) {
+	for (int i = 0; i < y + 1; i++) {
+		for (int ii = 0; ii < x + 1; ii++) {
 			if (ii >= x || i >= y) {
 				twoD_array[i][ii] = -1;
 			}
