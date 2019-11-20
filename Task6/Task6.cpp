@@ -67,6 +67,7 @@ void Search(std::vector<std::string>& vector) {
 		if (!namefound) {
 			std::cout << "No name containing '" << input << "' was found" << std::endl;
 		}
+		std::cout << std::endl;
 	}
 }
 
@@ -77,14 +78,64 @@ void Delete(std::vector<std::string>& vector) {
 	}
 
 	std::string input;
-	bool namefound = false;
+
 	std::cout << "Delete menu" << std::endl;
 
 	while (true) {
+		int names_found = 0;
+		std::string searched_for_name;
+
 		std::cout << "Please enter a name to delete or enter 'Q' to return to the previus menu" << std::endl;
 		std::cout << "Delete: ";
 		std::cin >> input;
 		std::cout << std::endl;
+
+		if (input == "Q") {
+			return;
+		}
+
+		for (std::string name : vector) {
+			if (name == input) {
+				names_found++;
+				searched_for_name = name;
+			}
+		}
+		if (names_found == 0) {
+			std::cout << "No such names was found" << std::endl;
+			continue;
+		}
+		std::cout << names_found << " names found" << std::endl;
+		if (names_found == 1) {
+			std::cout << "Are you sure you want to delete this name from the database?" << std::endl;
+			std::cout << "Enter 'yes' to delete: ";
+			std::cin >> input;
+			if (input == "yes") {
+				for (std::vector<std::string>::iterator i = vector.begin(); i != vector.end(); ++i) {
+					if (*i == searched_for_name) {
+						vector.erase(i);
+						break;
+					}
+				}
+			}
+		}
+		else {
+			int n;
+			std::cout << "How many of the names do you want to delete?" << std::endl;
+			std::cout << "Number to delete: ";
+			std::cin >> n;
+
+			if (n > names_found) {
+				n = names_found;
+			}
+			for (; n > 0; n--) {
+				for (std::vector<std::string>::iterator i = vector.begin(); i != vector.end(); ++i) {
+					if (*i == searched_for_name) {
+						vector.erase(i);
+						break;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -92,6 +143,10 @@ void Print(std::vector<std::string>& vector) {
 	if (vector.empty()) {
 		std::cout << "The database is empty." << std::endl;
 		return;
+	}
+
+	for (std::string i : vector) {
+		std::cout << i << std::endl;
 	}
 }
 
@@ -129,9 +184,4 @@ int main() {
 			return 0;
 		}
 	}
-
-
-
-	std::cin >> input;
-
 }
