@@ -1,34 +1,49 @@
-Name:	Herman Åberg
+Name:	Herman Ã…berg
 Course: D0037D
 
 Reflection:
 
 	Task 1:
-		The hard part was taking an input and putting it into an int array. If I redid this task now I would do it differently, but I'll leave it like it is now.
+		The hard part was taking an input and putting it into an int array. If I redid this task now I would do it differently,
+		but I'll leave it like it is now.
 
 	Task 2:
 		This one was quite interesting while not being hard. When I knew how to get the information I wanted it was quite easy.
 
 	Task 3:
-		I'm sure there is a better way of solving this one than what I did, but I'm really happy with how I solved it. Because I have a 2D array with a predetermined size I needed a way to add a "border" to know when to stop printing out the values of the array. I did this by setting the value of the element at X + 1 and Y + 1 to -1 because the number to be printed out are between 0 and 9, so they should not be -1.
+		I'm sure there is a better way of solving this one than what I did, but I'm really happy with how I solved it. Because I
+		have a 2D array with a predetermined size I needed a way to add a "border" to know when to stop printing out the values
+		of the array. I did this by setting the value of the element at X + 1 and Y + 1 to -1 because the number to be printed
+		out are between 0 and 9, so they should not be -1.
 
 	Task 4:
-		I quite overthinked this one and could reduce the amount of if statements by a lot. It works and I'm too lazy to change it now.
+		I quite overthinked this one and could reduce the amount of if statements by a lot. It works and I'm too lazy to change
+		it now.
 
 	Task 5:
-		Really happy with how i solved this one. The thing that needed to be solved with this one was figuring out how to make it work with uneven arrays.
+		Really happy with how i solved this one. The thing that needed to be solved with this one was figuring out how to make
+		it work with uneven arrays.
 
 	Task 6:
-		I think I might've made this one not as simple as intended. I didn't make use of switch and case. Instead I used a lookuptable with function pointers and the commands. For some reason I didn't notice that the example meny used numbers to call commands instead of writing them out in text. When I noticed I was almost done anyways so it didn't really matter.
+		I think I might've made this one not as simple as intended. I didn't make use of switch and case. Instead I used a
+		lookuptable with function pointers and the commands. For some reason I didn't notice that the example meny used numbers
+		to call commands instead of writing them out in text. When I noticed I was almost done anyways so it didn't really
+		matter.
 
 	Task 7:
-		Wasn't really sure about what exactly I was supposed to do in step 1. I did figure it out after reading the instructions again. Step 2 was quite easy.
+		Wasn't really sure about what exactly I was supposed to do in step 1. I did figure it out after reading the instructions
+		again. Step 2 was quite easy.
 
 
 Other notes:
 	
-	10 - 14h might be a good estimate on how much time I spent with this one. I did do some parts of it while having migraine or not having slept for a day (thanks to migraine not letting me fall asleep) so I don't really remember how much time I spent like that.
+	10 - 14h might be a good estimate on how much time I spent with this one. I did do some parts of it while having migraine or not
+	having slept for a day (thanks to migraine not letting me fall asleep) so I don't really remember how much time I spent like
+	that.
 
-	I did learn a lot about arrays in c++. I hadn't used them much before, or I had forgotten about them. A lot of what I learned was mainly syntax stuff. One of the things I learned that I found really intersting (but didn't really use that much) was about function pointers.
+	I did learn a lot about arrays in c++. I hadn't used them much before, or I had forgotten about them. A lot of what I learned
+	was mainly syntax stuff. One of the things I learned that I found really intersting (but didn't really use that much) was about
+	function pointers.
 
-	Not having any tasks that require you to redo another one in a different way made this lab a lot more interesting than lab 1. Or atleast not as tedious. Also combining all tasks in Task 7 was a fun little bonus.
+	Not having any tasks that require you to redo another one in a different way made this lab more interesting than lab 1. Or
+	atleast not as tedious. Also combining all tasks in Task 7 was a fun little bonus.
