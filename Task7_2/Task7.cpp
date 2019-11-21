@@ -36,7 +36,7 @@ int main() {
 			Task2();
 			break;
 		case 3:
-			Task3();;
+			Task3();
 			break;
 		case 4:
 			Task4();
